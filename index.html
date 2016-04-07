@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>MusicHub || User Login</title>
+<link href="css/userLogin.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="body"></div>
+	<div class="grad"></div>
+	<div class="header">
+		<div>Music<span>Hub</span></div>
+	</div>		
+	<form method="POST" action="database/userLogin.php">
+	<div class="userHeader">
+		<div>User<span>Login</span></div>
+	</div>
+	<div class="loginUser">
+			<input type="text" placeholder="Username" name="uname"><br>
+			<br>
+			<input type="password" placeholder="Password" name="pwd"><br>
+			<br>
+			<input type="submit" class="styled-button-1" value="Login">
+		</div>
+	</form>
+	<form action="database/artistLogin.php" method="POST">
+	<div class="ArtistHeader">
+		<div>Artist<span>Login</span></div>
+	</div>
+	<div class="loginArtist">
+			<input type="text" placeholder="Artist Name" name="aname"><br>
+			<br>
+			<input type="password" placeholder="Password" name="pwd"><br>
+			<br>
+			<input type="submit" class="styled-button-1" value="Login">
+			<style type="text/css">
+.styled-button-1 {
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	-moz-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	color:#333;
+	background-color:#FB2;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:none;
+	font-family:'Helvetica Neue',Arial,sans-serif;
+	font-size:16px;
+	font-weight:700;
+	height:32px;
+	padding:4px 32px;
+	text-shadow:#FE6 0 1px 0
+}
+ </style>
+		</div>
+	</form>
+</body>
+</html>
